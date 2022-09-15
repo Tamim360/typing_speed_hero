@@ -101,7 +101,6 @@ body {
   display: none;
 }
 .title {
-  /* text-align: center; */
   color: white;
   margin: 20px 0;
 }
@@ -228,9 +227,6 @@ button {
     padding: 0 20px;
     width: 100%;
   }
-  /* .card {
-    flex-direction: column;
-  } */
 }
 
 @media screen and (max-width: 890px) {
