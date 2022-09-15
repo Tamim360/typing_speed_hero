@@ -12,12 +12,15 @@ let startTime;
 let questionText = "";
 
 // Load and display question
-fetch("./texts.json")
+const qoutes = () => {
+  fetch("./texts.json")
   .then((res) => res.json())
   .then((data) => {
     questionText = data[Math.floor(Math.random() * data.length)];
     question.innerHTML = questionText;
   });
+}
+qoutes()
 
 // checks the user typed character and displays accordingly
 const typeController = (e) => {
@@ -52,6 +55,7 @@ const typeController = (e) => {
   // check if given question text is equal to user typed text
   if (questionText === userText) {
     gameOver();
+    qoutes()
   }
 };
 
