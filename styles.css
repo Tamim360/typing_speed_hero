@@ -123,7 +123,7 @@ body {
 }
 
 .nav ul li a{
-  color: white;
+  color: rgb(161, 153, 153);
   text-decoration: none;
   font-size: 20px;
 }
@@ -131,6 +131,10 @@ body {
 .nav ul li a:hover{
   color: #9DFFAD;
 }
+.nav ul li a.active{
+  color: white;
+}
+/* nav ends */
 
 .divider-container {
   height: 80px;
