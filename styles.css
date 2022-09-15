@@ -99,9 +99,34 @@ body {
   display: none;
 }
 .title {
-  text-align: center;
+  /* text-align: center; */
   color: white;
   margin: 20px 0;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav ul{
+  display: flex;
+  list-style-type: none;
+}
+
+.nav ul li{
+  margin-left: 20px;
+}
+
+.nav ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav ul li a:hover{
+  color: #9DFFAD;
 }
 
 .divider-container {
@@ -211,5 +236,10 @@ button {
   .card{
     width: 100%;
     text-align: center;
+  }
+  .nav{
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30px;
   }
 }
